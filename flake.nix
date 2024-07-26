@@ -43,7 +43,8 @@
 
 						preInstall = ''
 							mkdir -p lua
-							ln -s ${rustPkg}/target/release/libmoveline.so lua/moveline.so
+
+							ln -s ${rustPkg}/lib/libmoveline.so lua/moveline.so
 
 							# include docs and license
 							cp -s ${./README.md} README.md
